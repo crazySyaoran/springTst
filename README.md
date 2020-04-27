@@ -8,9 +8,17 @@ Import Project -> 选择`complete/pom.xml`文件
 ```
 create database springtst;
 use springtst;
+
 CREATE TABLE category_ (
   id int(11) NOT NULL AUTO_INCREMENT,
   name varchar(30),
   PRIMARY KEY (id)
 ) DEFAULT CHARSET=UTF8;
+
+CREATE TABLE user_ (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  passwd varchar(45),
+  PRIMARY KEY (id)
+) DEFAULT CHARSET=UTF8;
+
 ```
