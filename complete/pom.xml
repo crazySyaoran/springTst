@@ -94,6 +94,22 @@
             <version>4.1.6</version>
         </dependency>
 
+		<!--<dependency>-->
+			<!--<groupId>com.lyyzoo.sunny.starter</groupId>-->
+			<!--<artifactId>sunny-starter-core</artifactId>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-security</artifactId>-->
+		<!--</dependency>-->
+
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+
 	</dependencies>
 
 	<build>
