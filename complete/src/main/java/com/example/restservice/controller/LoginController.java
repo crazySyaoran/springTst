@@ -20,18 +20,14 @@ public class LoginController {
                         Map<String,Object> map, HttpSession session){
 
         String password_T = passwdMapper.getPasswd(Integer.parseInt(username));
-        System.out.println(password_T);
 
         if(!StringUtils.isEmpty(username) && password_T.equals(password)){
             //登陆成功，防止表单重复提交，可以重定向到主页
             session.setAttribute("loginUser",username);
-            System.out.println("LOGIN success");
             return "redirect:/index";
         }else{
             //登陆失败
             map.put("msg","用户名密码错误");
-            System.out.println("LOGIN failded");
-
             return  "login";
         }
 
