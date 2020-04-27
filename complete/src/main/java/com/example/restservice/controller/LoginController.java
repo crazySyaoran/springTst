@@ -30,7 +30,6 @@ public class LoginController {
             map.put("msg","用户名密码错误");
             return  "login";
         }
-
     }
 
     @GetMapping("/")
@@ -41,6 +40,12 @@ public class LoginController {
     @GetMapping("/index")
     public String index(){
         return "index";
+    }
+
+    @GetMapping("logout")
+    public String logout(HttpSession session){
+        session.removeAttribute("loginUser");
+        return "login";
     }
 
 
