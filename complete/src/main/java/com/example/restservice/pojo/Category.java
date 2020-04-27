@@ -4,7 +4,7 @@ package com.example.restservice.pojo;
 public class Category {
 
     private int id;
-    private String passwd;
+    private String name;
 
     public int getId() {
         return id;
@@ -13,11 +13,11 @@ public class Category {
         this.id = id;
     }
 
-    public void setPasswd(String passwd) {
-        this.passwd = passwd;
+    public String getName() {
+        return name;
     }
 
-    public String getPasswd() {
-        return passwd;
+    public void setName(String name) {
+        this.name = name;
     }
 }
